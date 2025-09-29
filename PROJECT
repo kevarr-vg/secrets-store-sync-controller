@@ -6,7 +6,7 @@ domain: secret-sync.x-k8s.io
 layout:
 - go.kubebuilder.io/v4
 projectName: secrets-store-sync-controller
-repo: sigs.k8s.io/secrets-store-sync-controller
+repo: github.com/kevarr-vg/secrets-store-sync-controller
 resources:
 - api:
     crdVersion: v1
@@ -14,6 +14,6 @@ resources:
   controller: true
   domain: secret-sync.x-k8s.io
   kind: SecretSync
-  path: sigs.k8s.io/secrets-store-sync-controller/api/v1alpha1
+  path: github.com/kevarr-vg/secrets-store-sync-controller/api/v1alpha1
   version: v1alpha1
 version: "3"

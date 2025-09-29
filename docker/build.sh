@@ -20,9 +20,9 @@ set -o pipefail
 
 TASK=$1
 
-LDFLAGS="-X sigs.k8s.io/secrets-store-sync-controller/pkg/version.BuildVersion=${IMAGE_VERSION} \
- -X sigs.k8s.io/secrets-store-sync-controller/pkg/version.Vcs=${BUILD_COMMIT} \
- -X sigs.k8s.io/secrets-store-sync-controller/pkg/version.BuildTime=${BUILD_TIMESTAMP} -extldflags '-static'"
+LDFLAGS="-X github.com/kevarr-vg/secrets-store-sync-controller/pkg/version.BuildVersion=${IMAGE_VERSION} \
+ -X github.com/kevarr-vg/secrets-store-sync-controller/pkg/version.Vcs=${BUILD_COMMIT} \
+ -X github.com/kevarr-vg/secrets-store-sync-controller/pkg/version.BuildTime=${BUILD_TIMESTAMP} -extldflags '-static'"
 
 # This function will build and push the image for all the architectures supported via PLATFORMS var.
 build_and_push() {

@@ -24,7 +24,7 @@ import (
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/klog/v2"
 
-	"sigs.k8s.io/secrets-store-sync-controller/pkg/k8s/token"
+	"github.com/kevarr-vg/secrets-store-sync-controller/pkg/k8s/token"
 )
 
 // TokenClient is a client for Kubernetes Token API
