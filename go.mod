@@ -1,6 +1,6 @@
 module github.com/kevarr-vg/secrets-store-sync-controller
 
-go 1.24.4
+go 1.24.3
 
 require (
 	github.com/google/go-cmp v0.6.0
