@@ -1,4 +1,4 @@
-module sigs.k8s.io/secrets-store-sync-controller
+module github.com/kevarr-vg/secrets-store-sync-controller
 
 go 1.24.4
 
